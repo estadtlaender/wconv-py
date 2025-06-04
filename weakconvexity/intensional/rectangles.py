@@ -108,7 +108,7 @@ def classification(X: Iterable[Vec], y: Iterable[int], tau: float = _tau) -> Non
 
 
 def classification_from_boxes(inboxes: frozenset[tuple[Rectangle, float, int]], tau: float = _tau) -> None | frozenset[tuple[Rectangle, float, int]]:
-    return intensional.classification_from_boxes(inboxes, tau) 
+    return intensional.classification_from_blocks(inboxes, tau) 
 
 
 def classification_randomized(
